@@ -10,7 +10,6 @@
     		document.getElementById("character").style.left = leftValue+"px";
     		document.getElementById("character").style.top = topValue+"px";
     	}
-
     		document.onkeydown = function(e){
     			console.log(e);
 					if(e.keyCode == 37 && leftValue > 0) { // LEFT
@@ -24,7 +23,7 @@
     			}
 					else if (e.keyCode == 38 && topValue > 0) { // UP
 						topValue = topValue - 10;
-				  }
+					}
 				update();
     	}
     </script>
